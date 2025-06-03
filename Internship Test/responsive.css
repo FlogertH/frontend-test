@@ -1,0 +1,182 @@
+/* Minor Breakpoint */
+@media (max-width: 1700px) {
+  .fsize-large {
+    font-size: 22px;
+    line-height: 20px;
+  }
+}
+
+/* ===== Desktops ===== */
+@media (max-width: 1280px) {
+  /* General styling */
+  .fsize-small {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .fsize-medium {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .fsize-large {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .fsize-xlarge {
+    font-size: 32px;
+    line-height: 60px;
+  }
+  .fsize-hero {
+    font-size: 58px;
+    line-height: 58px;
+  }
+  /*  */
+
+  /* Component styling */
+  .hero-content {
+    width: 45%;
+  }
+
+  .hero-text {
+    margin-bottom: 40px;
+  }
+
+  .featured-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== Laptops ===== */
+@media (max-width: 1024px) {
+  /* General styling */
+  .fsize-small {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .fsize-large {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .fsize-xlarge {
+    font-size: 28px;
+    line-height: 50px;
+  }
+  .fsize-hero {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  /*  */
+
+  /* Component styling */
+  .hero-content {
+    width: 50%;
+  }
+
+  .hero-text {
+    margin-bottom: 30px;
+  }
+}
+
+/* ===== Small Laptops ===== */
+@media (max-width: 900px) {
+  /* General styling */
+  .fsize-small {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .fsize-medium {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .fsize-large {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .fsize-xlarge {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .fsize-hero {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  /* Navbar transformation */
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: #fff;
+    z-index: 1000;
+  }
+
+  .navbar-store-info-wrapper {
+    display: none;
+    position: absolute;
+    top: 0px; /* adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+  }
+
+  .navbar-login-wrapper {
+    display: none;
+    position: absolute;
+    top: 130px; /* adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+  }
+
+  .navbar.active .navbar-store-info-wrapper,
+  .navbar.active .navbar-login-wrapper {
+    display: flex;
+    height: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-login-seperator {
+    display: none;
+  }
+  .hero-content {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/* ===== Mobile (large phones) ===== */
+@media (max-width: 600px) {
+  .hero-content {
+    width: 100%;
+  }
+
+  .featured-products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+  .fsize-hero {
+    font-size: 38px;
+    line-height: 38px;
+  }
+}
